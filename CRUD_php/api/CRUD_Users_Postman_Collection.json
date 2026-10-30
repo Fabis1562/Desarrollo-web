@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "b3e0c7a5-29b1-4f1b-a9b1-872fbf401234",
+		"name": "CRUD PHP Users API",
+		"description": "Colección lista para probar la API REST de usuarios con XAMPP y Postman.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Obtener todos los usuarios (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Desarollo_web/CRUD_php/api/users.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Desarollo_web",
+						"CRUD_php",
+						"api",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Obtener un usuario por ID (GET)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Desarollo_web/CRUD_php/api/users.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Desarollo_web",
+						"CRUD_php",
+						"api",
+						"users.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Crear nuevo usuario (POST)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Carlos\",\n    \"lastname\": \"Perez\",\n    \"username\": \"cperez\",\n    \"email\": \"carlos@example.com\",\n    \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/Desarollo_web/CRUD_php/api/users.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Desarollo_web",
+						"CRUD_php",
+						"api",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Actualizar usuario (PUT)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"name\": \"Carlos Editado\",\n    \"lastname\": \"Perez Gomez\",\n    \"username\": \"cperez_edit\",\n    \"email\": \"cperez_nuevo@example.com\",\n    \"password\": \"nueva123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/Desarollo_web/CRUD_php/api/users.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Desarollo_web",
+						"CRUD_php",
+						"api",
+						"users.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. Eliminar usuario (DELETE)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Desarollo_web/CRUD_php/api/users.php?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Desarollo_web",
+						"CRUD_php",
+						"api",
+						"users.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6. Iniciar sesión / Login (POST)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"cperez\",\n    \"password\": \"123456\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost/Desarollo_web/CRUD_php/api/login.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Desarollo_web",
+						"CRUD_php",
+						"api",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+

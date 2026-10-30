@@ -1,0 +1,17 @@
+# Ignorar enlace simbólico / unión para no duplicar en el repositorio
+usuarios-productos/
+usuarios-productos
+
+# Archivos temporales de Office / Word
+~$*.docx
+~$*.doc
+
+# Archivos de prueba y temporales
+*.tmp
+test.png
+
+# Entornos virtuales o caches
+__pycache__/
+*.pyc
+.vscode/
+.idea/
