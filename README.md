@@ -26,3 +26,4 @@ Implementación inicial de operaciones Create, Read, Update y Delete con interfa
 * **XAMPP** (Apache 2.4+ y MariaDB/MySQL).
 * **PHP** versión 8.0 o superior.
 * **Postman** para pruebas de integración de endpoints REST.
+
